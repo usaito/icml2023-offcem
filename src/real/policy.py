@@ -15,7 +15,6 @@ def gen_eps_greedy(
         rank = rankdata(expected_reward, axis=1)
     is_topk = rank <= k
     action_dist = ((1.0 - eps) / k) * is_topk
-    action_dist += eps / np.arange(1, is_topk.shape[1] + 1)[np.newaxis]
     action_dist /= action_dist.sum(1)[:, np.newaxis]
 
     return action_dist[:, :, np.newaxis]
