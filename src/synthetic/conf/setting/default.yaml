@@ -1,0 +1,74 @@
+# @package _group_
+experiment: default
+# experimental settings
+n_seeds: 300
+dim_context: 10
+n_val_data: 3000
+n_test_data: 100000
+n_test_users: 1000
+n_actions: 1000
+n_cat_per_dim: 5
+latent_param_mat_dim: 5
+n_cat_dim: 10
+beta: -0.1
+n_def_actions: 0.0
+reward_std: 3.0
+reward_type: continuous
+eps: 0.2
+random_state: 12345
+# estimator-hyperparam
+n_clusters: 50
+# varying configs
+n_val_data_list:
+  - 500
+  - 1000
+  - 2000
+  - 4000
+  - 8000
+n_actions_list:
+  - 200
+  - 400
+  - 1000
+  - 2000
+  - 4000
+n_def_actions_list:
+  - 0.0
+  - 0.1
+  - 0.3
+  - 0.5
+  - 0.7
+  - 0.9
+n_clusters_list:
+  - 10
+  - 30
+  - 50
+  - 100
+  - 200
+eps_list:
+  - 0.0
+  - 0.2
+  - 0.4
+  - 0.6
+  - 0.8
+  - 1.0
+noise_list:
+  - 1.0
+  - 2.0
+  - 3.0
+  - 4.0
+  - 5.0
+n_cat_dim_list:
+  - 2
+  - 4
+  - 6
+  - 8
+  - 10
+beta_list:
+  - -1.0
+  - -0.5
+  - 0.0
+  - 0.5
+  - 1
+  - 2
+  - 5
+  - 10

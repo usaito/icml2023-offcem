@@ -1,0 +1,8 @@
+defaults:
+  - setting: default
+hydra:
+  run:
+    dir: ./real/logs/dataset=${setting.dataset}
+  sweep:
+    dir: ./real/logs/dataset=${setting.dataset}
+    subdir: ./
