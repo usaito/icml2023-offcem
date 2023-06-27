@@ -51,7 +51,7 @@ hydra-core = "1.0.7"
 
 ## Running the Code
 
-The experimental workflow is implemented using [Hydra](https://github.com/facebookresearch/hydra). The commands needed to reproduce the experiments are summarized below. Please move under the `src` directly first and then run the commands. The experimental results (including the corresponding figures) will be stored in the `logs/` directory.
+The experimental workflow is implemented using [Hydra](https://github.com/facebookresearch/hydra). The commands needed to reproduce the experiments are summarized below. Please move under the `src` directly first and then run the commands.
 
 ### Section 4.1: Synthetic Data
 
